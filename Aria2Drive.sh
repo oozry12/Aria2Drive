@@ -8,23 +8,7 @@ echo "    #                  https://pa.ci               #"
 echo "    #                   Version 0.1                #"
 echo "    ################################################"
 
-#check system pure debian 9
-echo -e ""
-if cat /etc/*-release | grep -Eqi "debian gnu/linux 9"; then
-  echo "Debian 9"
-else
-  echo "Only Debain 9 is supported"
-  echo "***EXIT***"
-  sleep 1
-  exit
-fi
-if dpkg -l | grep -Eqi "nginx|apache|caddy"; then
-  echo "System is modified"
-  echo "Pure Debain 9 is needed"
-  echo "***EXIT***"
-  sleep 1
-  exit
-fi
+
 
 #set up bbr
 if lsmod | grep -Eqi bbr; then
