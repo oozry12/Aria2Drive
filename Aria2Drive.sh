@@ -8,6 +8,7 @@ echo "    #                  https://pa.ci               #"
 echo "    #                   Version 0.1                #"
 echo "    ################################################"
 
+## Thanks https://pa.ci/95.html
 
 
 #set up bbr
